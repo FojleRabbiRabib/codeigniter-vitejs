@@ -110,18 +110,20 @@ class Vite
         return $result;
     }
 
-	/**
-	 * Check whether the current route is exluded or not.
-	 * 
-	 * @return bool
-	 */
-	public static function routeIsNotExluded(): bool
-	{
-		$routes = explode(',', env('VITE_EXCLUDED_ROUTES'));
-		
-		# remove spaces before and after the route.
-		// foreach($routes as $i => $route) $routes[$i] = ltrim( rtrim($route) );
+    /**
+     * Check whether the current route is exluded or not.
+     * 
+     * @return bool
+     */
+    public static function routeIsNotExluded(): bool
+    {
+        $routes = explode(',', env('VITE_EXCLUDED_ROUTES'));
+        
+        # remove spaces before and after the route.
+        // foreach($routes as $i => $route) $routes[$i] = ltrim( rtrim($route) );
 
-		return !in_array(uri_string(), $routes);
-	}
+        $routes = array_filter($routes, function ($route) { return $route !== ""; });
+
+        return !in_array(uri_string(), $routes);
+    }
 }
