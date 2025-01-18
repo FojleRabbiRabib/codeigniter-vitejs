@@ -26,7 +26,7 @@ Codeigniter vite is a package that aims to integrate [vitejs](https://vitejs.dev
 - ⏱️ Almost zero configuration
 - 🧩 Easy to install and remove
 - 🔨 Easy to customize
-- ✌️ Support most used frameworks: `react`, `vue`, and `svlete`. (check [v2](https://github.com/FojleRabbiRabib/codeigniter-vitejs/tree/v2) for SvelteKit support)
+- ✌️ Support most used frameworks: `react`, `react-ts` (check [react-ts](https://github.com/FojleRabbiRabib/codeigniter-vitejs/tree/react-ts), `vue`, and `svlete`. (check [v2](https://github.com/FojleRabbiRabib/codeigniter-vitejs/tree/v2) for SvelteKit support)
 - 🔥 Enjoy hot module replacement (HMR)
 
 ## Installation:
@@ -41,7 +41,7 @@ then from your project root, run:
 php spark vite:init --framework <framework>
 ```
 
-replace `<framework>` with `vue`, `react`, `svelte`, or `none`
+replace `<framework>` with `vue`, `react`, `react-ts`, `svelte`, or `none`
 
 or you can just run:
 
