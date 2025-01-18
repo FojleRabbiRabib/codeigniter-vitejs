@@ -9,7 +9,7 @@ class Decorator implements ViewDecoratorInterface
     public static function decorate(string $html): string
     {
         # Check whether vite is running or manifest is ready.
-        if (env('VITE_AUTO_INJECTING') && Vite::routeIsNotExluded() )
+        if (env('VITE_AUTO_INJECTING') && Vite::routeIsNotExcluded() )
         {
             if (Vite::isReady() === false)
             {
