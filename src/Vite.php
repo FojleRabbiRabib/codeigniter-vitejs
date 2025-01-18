@@ -126,8 +126,9 @@ class Vite
         });
 
         $patterns = array_map(function ($route) {
-            return '/^' . str_replace('*', '.*', preg_quote($route, '/')) . '$/';
-        }, $routes);
+			$route = str_replace('\*', '.*', preg_quote($route, '/'));
+			return '/^' . $route . '$/';
+		}, $routes);
 
         $currentUri = uri_string();
 
