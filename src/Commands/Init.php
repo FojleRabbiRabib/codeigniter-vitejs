@@ -15,7 +15,7 @@ class Init extends BaseCommand
 
 	private string $framework;
 
-	private array $supportedFrameworks = ['none', 'react', 'vue', 'svelte'];
+	private array $supportedFrameworks = ['none', 'react', 'react-ts', 'vue', 'svelte'];
 
 	private $path;
 
@@ -43,7 +43,7 @@ class Init extends BaseCommand
 			return;
 		}
 
-		# Now let's generate vite necesary files (vite.config.js, package.json ...etc).
+		# Now let's generate vite necessary files (vite.config.js, package.json ...etc).
 		$this->generateFrameworkFiles();
 
 		# Update .env file.
@@ -137,6 +137,10 @@ class Init extends BaseCommand
 			if ($this->framework === 'react') {
 				$envContent = file_get_contents($envFile);
 				$updates = str_replace("VITE_ENTRY_FILE='main.js'", "VITE_ENTRY_FILE='main.jsx'", $envContent);
+				file_put_contents($envFile, $updates);
+			} elseif ($this->framework === 'react-ts') {
+				$envContent = file_get_contents($envFile);
+				$updates = str_replace("VITE_ENTRY_FILE='main.js'", "VITE_ENTRY_FILE='main.tsx'", $envContent);
 				file_put_contents($envFile, $updates);
 			}
 		}

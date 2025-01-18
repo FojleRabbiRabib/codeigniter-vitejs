@@ -26,7 +26,7 @@ Codeigniter vite is a package that aims to integrate [vitejs](https://vitejs.dev
 - ⏱️ Almost zero configuration
 - 🧩 Easy to install and remove
 - 🔨 Easy to customize
-- ✌️ Support most used frameworks: `react`, `vue`, and `svlete`. (check [v2](https://github.com/FojleRabbiRabib/codeigniter-vitejs/tree/v2) for SvelteKit support)
+- ✌️ Support most used frameworks: `react`, `react-typescript`, `vue`, and `svlete`. (check [v2](https://github.com/FojleRabbiRabib/codeigniter-vitejs/tree/v2) for SvelteKit support)
 - 🔥 Enjoy hot module replacement (HMR)
 
 ## Installation:
@@ -41,7 +41,7 @@ then from your project root, run:
 php spark vite:init --framework <framework>
 ```
 
-replace `<framework>` with `vue`, `react`, `svelte`, or `none`
+replace `<framework>` with `vue`, `react`, `react-ts`, `svelte`, or `none`
 
 or you can just run:
 
@@ -63,7 +63,7 @@ our buddy `spark` will handle the rest for you 🙃
 > `npm run dev` is not where you should work, it main purpose is to serve assets, such as scripts or stylesheets.
 > once you build your files, it becomes useless
 > but as long as it running, the package will use it instead of the bundled files.
-> So make sure to **access your project** from ci server or a vitual host.
+> So make sure to **access your project** from ci server or a virtual host.
 
 ## Build your files:
 

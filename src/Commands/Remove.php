@@ -36,7 +36,7 @@ class Remove extends BaseCommand
 		$this->resetEnvFile();
 
 		# Everything is ready now.
-		CLI::write('Codeigniter vite has removed successfuly ✅', 'green');
+		CLI::write('Codeigniter vite has removed successfully ✅', 'green');
 		CLI::newLine();
 	}
 
@@ -83,7 +83,7 @@ class Remove extends BaseCommand
 	 */
 	private function resetEnvFile()
 	{
-		CLI::write('Reseting .env file...', 'yellow');
+		CLI::write('Resetting .env file...', 'yellow');
 		CLI::newLine();
 
 		# Get the env file.
