@@ -1,6 +1,6 @@
 <?php
 
-namespace Mihatori\CodeigniterVite;
+namespace FojleRabbiRabib\CodeigniterVite;
 
 use CodeIgniter\View\ViewDecoratorInterface;
 
