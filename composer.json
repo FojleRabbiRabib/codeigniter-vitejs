@@ -1,23 +1,29 @@
 {
-    "name": "mihatori/codeignitervite",
-    "description": "Integrate viteJs in codeiginter4 framework",
+    "name": "fojlerabbirabib/codeigniter-vite",
+    "description": "Integrate viteJs in CodeIgniter4 framework",
     "license": "MIT",
     "type": "library",
-    "homepage": "https://github.com/firtadokei/codeigniter-vitejs",
+    "homepage": "https://github.com/FojleRabbiRabib/codeigniter-vitejs",
     "keywords": [
         "codeigniter",
         "codeigniter4",
         "codeigniter-viteJs",
         "codeigniter-vueJs",
         "codeigniter-reactJs",
+        "codeigniter-reactJsTs",
         "codeigniter-svelteJs",
         "codeigniter spa"
     ],
     "authors": [
         {
+            "name": "Fojle Rabbi Rabib",
+            "email": "hello@rabib.me",
+            "homepage": "https://github.com/FojleRabbiRabib/"
+        },
+        {
             "name": "Mihatori Kei",
             "email": "mihatorikei@gmail.com",
-            "homepage": "https://github.com/firtadokei/"
+            "homepage": "https://github.com/mihatorikei/"
         }
     ],
     "require": {
@@ -25,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Mihatori\\CodeigniterVite\\": "src"
+            "FojleRabbiRabib\\CodeigniterVite\\": "src"
         }
     },
     "minimum-stability": "dev",

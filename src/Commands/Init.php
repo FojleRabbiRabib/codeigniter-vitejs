@@ -1,6 +1,6 @@
 <?php
 
-namespace Mihatori\CodeigniterVite\Commands;
+namespace FojleRabbiRabib\CodeigniterVite\Commands;
 
 use CodeIgniter\CLI\BaseCommand;
 use CodeIgniter\CLI\CLI;
@@ -21,7 +21,7 @@ class Init extends BaseCommand
 
 	public function __construct()
 	{
-		$this->path = service('autoloader')->getNamespace('Mihatori\\CodeigniterVite')[0];
+		$this->path = service('autoloader')->getNamespace('FojleRabbiRabib\\CodeigniterVite')[0];
 	}
 
 	public function run(array $params)

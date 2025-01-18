@@ -1,6 +1,6 @@
 <?php
 
-namespace Mihatori\CodeigniterVite;
+namespace FojleRabbiRabib\CodeigniterVite;
 
 class Vite
 {
@@ -111,19 +111,33 @@ class Vite
     }
 
     /**
-     * Check whether the current route is exluded or not.
+     * Check whether the current route is excluded or not.
      * 
      * @return bool
      */
-    public static function routeIsNotExluded(): bool
+    public static function routeIsNotExcluded(): bool
     {
         $routes = explode(',', env('VITE_EXCLUDED_ROUTES'));
-        
-        # remove spaces before and after the route.
-        // foreach($routes as $i => $route) $routes[$i] = ltrim( rtrim($route) );
 
-        $routes = array_filter($routes, function ($route) { return $route !== ""; });
+        // Clean up routes by trimming spaces and filtering out empty values
+        $routes = array_map('trim', $routes);
+        $routes = array_filter($routes, function ($route) {
+            return $route !== "";
+        });
 
-        return !in_array(uri_string(), $routes);
+        $patterns = array_map(function ($route) {
+            return '/^' . str_replace('*', '.*', preg_quote($route, '/')) . '$/';
+        }, $routes);
+
+        $currentUri = uri_string();
+
+        foreach ($patterns as $pattern) {
+            if (preg_match($pattern, $currentUri)) {
+                return false;
+            }
+        }
+
+        return true;
     }
+    
 }

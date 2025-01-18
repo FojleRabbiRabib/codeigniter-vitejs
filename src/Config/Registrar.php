@@ -1,13 +1,13 @@
 <?php
 
-namespace Mihatori\CodeigniterVite\Config;
+namespace FojleRabbiRabib\CodeigniterVite\Config;
 
 class Registrar
 {
     public static function View(): array
     {
         return [
-            'decorators' => ['Mihatori\CodeigniterVite\Decorator'],
+            'decorators' => ['FojleRabbiRabib\CodeigniterVite\Decorator'],
         ];
     }
 }

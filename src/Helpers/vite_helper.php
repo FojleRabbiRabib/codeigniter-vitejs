@@ -1,6 +1,6 @@
 <?php
 
-use Mihatori\CodeigniterVite\Vite;
+use FojleRabbiRabib\CodeigniterVite\Vite;
 
 /**
  * Get vite entry file or bundled files.

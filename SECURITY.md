@@ -2,4 +2,4 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability please email [mihatorikei@gmail.com](mailto:mihatorikei@gmail.com) instead of using the issue tracker.
+If you discover a security vulnerability please email [hello@rabib.me](mailto:hello@rabib.me) instead of using the issue tracker.
