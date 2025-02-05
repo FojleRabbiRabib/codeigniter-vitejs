@@ -1,14 +1,19 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
   "compilerOptions": {
-    "moduleResolution": "node",
-    "target": "ESNext",
-    "module": "ESNext",
-    "types": ["node"],
-    "resolveJsonModule": true
-  }
+      "allowJs": true,
+      "module": "ESNext",
+      "moduleResolution": "bundler",
+      "jsx": "react-jsx",
+      "strict": true,
+      "isolatedModules": true,
+      "target": "ESNext",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "noEmit": true,
+      "paths": {
+          "@/*": ["./resources/*"],
+      }
+  },
+  "include": ["resources/**/*.ts", "resources/**/*.tsx", "resources/**/*.d.ts"]
 }

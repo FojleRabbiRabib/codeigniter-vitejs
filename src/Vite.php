@@ -75,7 +75,7 @@ class Vite
      */
     public static function getReactTag(): ?string
     {
-        if (env('VITE_FRAMEWORK') === 'react')
+        if (env('VITE_FRAMEWORK') === 'react-ts' || env('VITE_FRAMEWORK') === 'react')
         {
             $origin = env('VITE_ORIGIN');
             $result = "<script type=\"module\">import RefreshRuntime from '$origin/@react-refresh';RefreshRuntime.injectIntoGlobalHook(window);window.\$RefreshReg\$ = () => {};window.\$RefreshSig\$ = () => (type) => type;window.__vite_plugin_react_preamble_installed__ = true;</script>";
