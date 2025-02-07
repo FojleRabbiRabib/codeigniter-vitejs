@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
 			outDir: "./public",
 			assetsDir: env.VITE_BUILD_DIR,
 			manifest: "manifest.json",
-			sourcemap: env.CI_ENVIRONMENT !== 'production',
+			sourcemap: env.VITE_APP_ENVIRONMENT !== 'production',
 			rollupOptions: {
 				input: `./${env.VITE_RESOURCES_DIR}/${env.VITE_ENTRY_FILE}`,
 			},
