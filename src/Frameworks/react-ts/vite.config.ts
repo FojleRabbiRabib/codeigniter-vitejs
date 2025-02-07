@@ -1,19 +1,19 @@
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
-import tailwindcss from '@tailwindcss/vite'
 import path from "path";
 
 export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, process.cwd());
 
 	return {
-		plugins: [react(), tailwindcss()],
+		plugins: [react()],
 		publicDir: false,
 		build: {
 			emptyOutDir: false,
 			outDir: "./public",
 			assetsDir: env.VITE_BUILD_DIR,
 			manifest: "manifest.json",
+			sourcemap: env.CI_ENVIRONMENT !== 'production',
 			rollupOptions: {
 				input: `./${env.VITE_RESOURCES_DIR}/${env.VITE_ENTRY_FILE}`,
 			},
