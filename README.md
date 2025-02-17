@@ -9,12 +9,12 @@
 		<a href="https://github.com/vitejs/awesome-vite#codeigniter">
 			<img src="https://awesome.re/mentioned-badge.svg">
 		</a>
-		<img src="https://custom-icon-badges.herokuapp.com/packagist/stars/fojlerabbirabib/codeignitervite?logo=star">
-		<a href="https://packagist.org/packages/fojlerabbirabib/codeignitervite">
-			<img src="https://badges.hiptest.com:/packagist/dt/fojlerabbirabib/codeignitervite?color=%23c700ff&logo=packagist&logoColor=%23c700ff">
+		<img src="https://custom-icon-badges.herokuapp.com/packagist/stars/fojlerabbirabib/codeigniter-vite?logo=star">
+		<a href="https://packagist.org/packages/fojlerabbirabib/codeigniter-vite">
+			<img src="https://badges.hiptest.com:/packagist/dt/fojlerabbirabib/codeigniter-vite?color=%23c700ff&logo=packagist&logoColor=%23c700ff">
 		</a>
 		<a href="LICENSE">
-			<img src="https://custom-icon-badges.herokuapp.com/packagist/l/fojlerabbirabib/codeignitervite?logo=law">
+			<img src="https://custom-icon-badges.herokuapp.com/packagist/l/fojlerabbirabib/codeigniter-vite?logo=law">
 		</a>
 	</p>
 </div>
